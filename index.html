@@ -1,0 +1,42 @@
+<hmtl>
+    <head>
+         <title>COUNTER </title>
+         <link rel="stylesheet" type="text/css" href="style1.css">
+    </head>
+    <body> 
+        <div class="container">
+            <h1 class="head">COUNTER</h1>
+            <div id="num">0</div>
+
+            <form onsubmit="incr(); return false;">
+            <input type="submit" class="bind1" value="ADD">
+            </form> 
+
+            <form onsubmit="decr(); return false;">
+                <input type="submit" class="bind2" value="LOW">
+            </form> 
+        </div>
+    </body>
+    <script>
+            //let counter=0;
+            let counter=document.getElementById('num').innerHTML;
+            function incr()
+            {
+                 
+                        counter++;
+                    document.querySelector('#num').innerHTML=counter;
+            
+
+            }
+            function decr()
+            {
+                 
+                        counter--;
+                    document.querySelector('#num').innerHTML=counter;
+            
+
+            }
+
+
+    </script>
+</hmtl>
